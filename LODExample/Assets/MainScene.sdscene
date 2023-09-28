@@ -19,7 +19,7 @@ Hierarchy:
                 Components:
                     649a104fadffbd4b6176c0bae7847655: !TransformComponent
                         Id: 8fe84a29-d934-4dcc-a962-719e1816b826
-                        Position: {X: -0.06356162, Y: 0.5, Z: 0.0}
+                        Position: {X: 0.08218804, Y: 0.5, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -33,13 +33,13 @@ Hierarchy:
                         LOD:
                             1931b5902b5671ed8966398ac7c54ea1:
                                 Model: 99c2419f-59ab-47cc-a75b-3190ea652802:Sphere
-                                DistanceToActivate: 5.0
+                                DistanceToActivate: 10.0
                             19b48e12b7f0b0c9f4f7f4562d2d1c07:
                                 Model: 834fd048-1977-4837-8668-dccb64ce8776:Cube
-                                DistanceToActivate: 10.0
+                                DistanceToActivate: 20.0
                             79013a09528f95cb9c8b95761c452f7a:
                                 Model: bcd82b71-0564-43e3-9182-6e66d0739ac4:Plane
-                                DistanceToActivate: 15.0
+                                DistanceToActivate: 30.0
         -   Entity:
                 Id: 4462792a-4dc9-4c2c-8b68-bd0812126c88
                 Name: Skybox

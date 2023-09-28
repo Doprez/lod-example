@@ -33,13 +33,14 @@ public class LODProcessor : EntityProcessor<LODEntityComponent>
 	{
 		var lods = lod.LOD;
 
-		var distance = Vector3.Distance(camera.Entity.Transform.WorldMatrix.TranslationVector, lod.Entity.Transform.WorldMatrix.TranslationVector);
+		var distance = Vector3.Distance(camera.GetWorldPosition(), lod.Entity.Transform.WorldMatrix.TranslationVector);
 
-		if(lod.UITest != null && lod.UITest.Page != null)
-		{
-			var text = lod.UITest.Page.RootElement.FindVisualChildOfType<TextBlock>();
-			text.Text = $"Distance: {distance}";
-		}
+		// commented due to constant exceptions being thrown at start up
+		//if(lod.UITest != null && lod.UITest.Page != null)
+		//{
+		//	var text = lod.UITest.Page.RootElement.FindVisualChildOfType<TextBlock>();
+		//	text.Text = $"Distance: {distance}";
+		//}
 
 		for (int i = lods.Count - 1; i >= 0; i--)
 		{
